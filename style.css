@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.2rem;
+  display: grid;
+  min-width: 100vh;
+  border: 2px solid black;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    "header   header"
+    "main     aside";
+}
+
+header {
+  grid-area: header;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+main {
+  grid-area: main;
+  display: flex;
+}

@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cadastro de Clientes</title>
+  </head>
+  <body>
+    <header>
+      <img src="./logo.jpg" alt="Imagem da empresa" style="width: 400px" />
+
+      <div id="menu">
+        <span id="menu">MENU</span>
+        <ul id="menu_escondido">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Serviços</a></li>
+          <li><a href="#">Orçamento</a></li>
+          <li><a href="#">Trabalhe Conosco</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <div id="container">
+        <form action="" id="formulario">
+          <div id="dados_pessoais">
+            <!--Colocar o nome "dados_pessoais" na borda da caixa-->
+            <div class="inputs">
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                placeholder="Digite seu Nome"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="email@email.com"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <label for="telefone">Telefone:</label>
+              <!--Como transformar esse texto com parentese e hifen em apenas numeros-->
+              <input
+                type="text"
+                id="telefone"
+                placeholder="(88)99898-9898"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <label for="idade">Idade:</label>
+              <input
+                type="number"
+                id="idade"
+                placeholder="Digite sua idade"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <label for="salario">Salario:</label>
+              <input
+                type="text"
+                id="salario"
+                placeholder="Digite seu salario"
+                required
+              />
+            </div>
+          </div>
+          <div id="endereco">
+            <div class="inputs">
+              <!--Colocar o nome na linha -->
+              <label for="rua">Rua:</label>
+              <input
+                type="text"
+                id="rua"
+                placeholder="Digite sua Rua"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <!--Colocar o nome na linha -->
+              <label for="numero">numero:</label>
+              <input
+                type="number"
+                id="numero"
+                placeholder="Digite seu numero"
+                required
+              />
+            </div>
+            <div class="inputs">
+              <!--Colocar o nome na linha -->
+              <label for="bairro">Bairro:</label>
+              <input
+                type="text"
+                id="bairro"
+                placeholder="Digite seu Bairro"
+                required
+              />
+            </div>
+
+            <div class="inputs">
+              <label for="estado">Estado:</label>
+              <input
+                type="text"
+                id="estado"
+                placeholder="Digite seu Estado"
+                required
+              />
+            </div>
+
+            <div class="inputs">
+              <label for="cep">CEP:</label>
+              <input
+                type="text"
+                id="cep"
+                placeholder="Digite seu CEP"
+                required
+              />
+            </div>
+
+            <div class="inputs">
+              <!--Perguntar como colocar opções de cidades de um Estado Baseado no EStado que o usuario escolheu-->
+              <label for="cidade">Cidade:</label>
+              <select id="cidade" name="cidades">
+                <option value="volvo">Icó</option>
+                <option value="saab">Iguatu</option>
+                <option value="fiat">Orós</option>
+                <option value="audi">Cedro</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit">Cadastrar</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="front"></script>
+    <script src="serve.js"></script>
+  </body>
+</html>
